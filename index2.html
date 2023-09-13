@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+        function verifica() {
+            
+            var numero = document.formu.numero.value;
+
+            if(numero>0){
+                document.write("numero positivo");
+            }
+            else if(numero<0){
+                document.write("numero negativo");
+            }
+            else if(numero==0){
+                document.write("numero é igual a zero");
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <form name="formu">
+    
+        numero: <input type="number" name="numero">
+     <input type="submit" value="enviar" onclick="verifica()">
+
+    </form>
+</body>
+</html>
